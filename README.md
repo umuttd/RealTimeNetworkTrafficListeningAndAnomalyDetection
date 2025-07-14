@@ -1,7 +1,7 @@
 # Gerçek Zamanlı Ağ Trafiği Dinleme ve K-Means ile Anomali Tespiti
 
 ## 📖 Proje Tanımı  
-Bu proje, gerçek zamanlı ağ trafiğini dinleyerek K-Means kümeleme algoritması ile anomali tespiti yapmayı amaçlar. TCP/IP paket başlıklarından çıkarılan özellikler kullanılarak normal ve anomalik trafik örnekleri ayrıştırılır. Özellikle SYN Flood, Port Tarama ve ICMP Flood (Ping Flood) saldırıları simüle edilerek model performansı ölçülmüştür :contentReference[oaicite:0]{index=0}.
+Bu proje, gerçek zamanlı ağ trafiğini dinleyerek K-Means kümeleme algoritması ile anomali tespiti yapmayı amaçlar. TCP/IP paket başlıklarından çıkarılan özellikler kullanılarak normal ve anomalik trafik örnekleri ayrıştırılır. Özellikle SYN Flood, Port Tarama ve ICMP Flood (Ping Flood) saldırıları simüle edilerek model performansı ölçülmüştür.
 
 ## ✨ Özellikler
 - **Gerçek zamanlı trafik dinleme:** Ağ arayüzünden gelen paketler anlık olarak işlenir.  
@@ -10,7 +10,7 @@ Bu proje, gerçek zamanlı ağ trafiğini dinleyerek K-Means kümeleme algoritma
 - **Saldırı simülasyonları:**  
   - SYN Flood (`hping3 -S <hedef_ip> -p 80 --flood`)  
   - Port Tarama (`masscan -p1-65535 <hedef_ip> --rate=1000`)  
-  - ICMP Flood (`ping <hedef_ip> -s 65500 -f`) :contentReference[oaicite:1]{index=1}.
+  - ICMP Flood (`ping <hedef_ip> -s 65500 -f`) 
 
 ## 🛠️ Teknolojiler
 - **Python 3.8+**  
